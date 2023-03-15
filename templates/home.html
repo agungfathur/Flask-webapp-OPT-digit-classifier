@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Simple Classifier using Dataset OPT-DIGIT</h1>
+<h2>Enter data JSON TRAIN and JSON TEST OPT-Digit:</h2>
+<form method="POST" enctype="multipart/form-data">
+  <label for="myfile">Select a file for train:</label>
+  <input type="file" id="myfile" name="train" accept=".json"><br><br>
+  <label for="myfile">Select a file for evaluate:</label>
+  <input type="file" id="myfile" name="evaluate" accept=".json"><br><br>
+  <label for="myfile">Please input array index:</label>
+  <input type="number" id="myfile" name="predict"><br><br>
+  <button type="submit">Submit</button>
+</form>
+<h3>{{trainaccure}}</h3>
+<h3>{{evaluateaccure}}</h3>
+<h3>{{hasil_predict}}</h3>
+</body>
+</html>
